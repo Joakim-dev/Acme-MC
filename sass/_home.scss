@@ -1,0 +1,85 @@
+.home {
+  grid-column: full-start/ full-end;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/mc-1br.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; // to prevent scrollbar from animations
+  position: relative; //important to prevent glitch in theanimation
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .butch {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-top: 15%;
+      color: $off-white;
+      font-size: 2.5vw;
+      animation: moveInLeft 2.2s ease-in-out;
+    }
+    hr {
+      width: 110%;
+      height: 2px;
+      background: $off-white;
+      color: $off-white;
+      margin-top: 3vw;
+    }
+    h1 {
+      color: $off-white;
+      letter-spacing: 1.6vw;
+      margin-bottom: 10vw;
+      font-size: 6vw;
+      animation: moveInRight 2.2s ease-in-out;
+    }
+    button {
+      @media only screen and (min-width: $bp-medium) {
+        font-size: 1.5rem;
+      }
+      @media only screen and (min-width: $bp-large) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: $dark-gray;
+  }
+}
+.git {
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  animation: moveInBottomLeft 2s ease-in-out;
+  @media only screen and (min-width: $bp-small) {
+    flex-direction: row;
+    width: 35%;
+  }
+  @media only screen and (min-width: $bp-large) {
+    flex-direction: row;
+    width: 25%;
+  }
+  @media only screen and (min-width: $bp-xxl) {
+    flex-direction: row;
+    width: 18%;
+  }
+  .btn-left {
+    animation: animateBtn 2s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+  }
+  .btn-right {
+    animation: animateBtn 2s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+  }
+}

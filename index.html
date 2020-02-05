@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Description"
+      content="A part of the portfolio belonging to Joakim Wretlind, containing FrontEnd Acme MC."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Michroma|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Acme MC</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <header>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a></a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#news">news</a></li>
+          <li><a href="#footer">contact</a></li>
+          <li>
+            <a
+              href="https://github.com/Joakim-dev/Acme-MC.git"
+              target="_blank"
+              rel="noopener"
+              ><img src="/img/gitbr.png" alt="github icon" width="28rem"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Wrapping container-->
+    <div class="container">
+      <!--HOME-->
+      <div id="home" class="home">
+        <div class="butch">
+          <h2 class="heading-2 heading-2--light">Live your dream</h2>
+          <hr />
+          <h1 class="heading-1 heading-1--light">acme mc</h1>
+        </div>
+        <ul class="git">
+          <li>
+            <a class="btn-left" href="#footer"
+              ><button class="btn btn--transparent btn--animated">
+                Contact us
+              </button></a
+            >
+          </li>
+          <li>
+            <a
+              class="btn-right"
+              href="https://github.com/Joakim-dev/Acme-MC.git"
+              target="_blank"
+              rel="noopener"
+              ><img src="/img/gitbr.png" alt="github icon" width="43rem"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!--ABOUT-->
+      <div id="about" class="about">
+        <div class="slant"></div>
+        <div class="about-heading">
+          <h3>
+            We build <br />
+            extraordinary
+          </h3>
+          <h2>Machines</h2>
+        </div>
+      </div>
+      <div class="about-bottom"></div>
+      <img src="/img/mc-3.jpg" alt="standing mc" class="bottom-pic" />
+
+      <div class="about-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+          delectus deserunt corrupti esse. Cupiditate facilis sunt labore eaque
+          at quia quos, iure vitae incidunt! Commodi asperiores odit odio ipsam
+          totam est porro quidem, nobis maiores quas perspiciatis, quasi velit,
+          quibusdam dolores quaerat. Iusto, molestias rerum id saepe eaque
+          dolore mollitia.
+        </p>
+
+        <button class="btn btns btn--blue modal-open" data-modal="modal">
+          About this project
+        </button>
+      </div>
+      <!--ABOUT MODAL-->
+      <div id="modal" class="modal">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="modal__close">&times;</span>
+            <h2>This Project</h2>
+          </div>
+          <div class="modal__body">
+            <h4>Project Goal</h4>
+            <p>
+              The goal of this project was to make it rather casual but still
+              nice. I wanted to implement some different styles, like the
+              diagonal page, the gallery, the news and so on.Since my last
+              project was build desktop first, I decided to do this one
+              mobile-first.
+            </p>
+            <p>
+              Another very important goal was to improve the way the code was
+              written, compared to the last project.
+            </p>
+            <br />
+            <h4>Workflow</h4>
+            <p>
+              I actually made the design for desktop first and from that, I
+              developed the mobile design.
+            </p>
+            <p>
+              This led to some differences in the order of appearance between
+              for example images and text.
+            </p>
+            <br />
+            <h4>Outcome</h4>
+            <p>
+              When testing the page runs as expected and the components are in
+              place. More features could obviously be added, but the goal was to
+              keep it fairly simple. I would say that the outcome of this
+              project meets the goals well,
+            </p>
+            <p>Audits: 96, 100, 100, 100</p>
+            <p>
+              The 96 is because of large images, but I don't want to compress
+              them further because of the loss of quality this would bring.
+            </p>
+            <br />
+            <h4>Tech Used</h4>
+            <ul>
+              <p>html5</p>
+              <p>sass</p>
+              <p>javascript</p>
+            </ul>
+            <br />
+          </div>
+          <div class="modal__footer">
+            <h3>2020</h3>
+          </div>
+        </div>
+      </div>
+      <!--SERVICES-->
+      <div id="services" class="services">
+        <section class="features">
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="img/sprite.svg#icon-key"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--light">Sell</h4>
+            <p class="feature__text">
+              We will sell you the bike of your dreams. Lorem, ipsum dolor sit
+              amet consectetur adipisicing elit. Tenetur distinctio
+              necessitatibus pariatur voluptatibus.
+            </p>
+          </div>
+
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="img/sprite.svg#icon-wrench"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--light">Repair</h4>
+            <p class="feature__text">
+              We will fix your broken ride. Voluptatum mollitia quae. Vero ipsum
+              sapiente molestias accusamus rerum sed a eligendi aut quia.
+            </p>
+          </div>
+
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="img/sprite.svg#icon-gas"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--light">Service</h4>
+            <p class="feature__text">
+              When you some service is at need. Tenetur distinctio
+              necessitatibus pariatur voluptatibus quidem consequatur harum.
+            </p>
+          </div>
+
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="img/sprite.svg#icon-pistons"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--light">Build</h4>
+            <p class="feature__text">
+              We custom build the bike you want. Vero ipsum sapiente molestias
+              accusamus rerum. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+          </div>
+
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="img/sprite.svg#icon-exhaust"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--light">Parts</h4>
+            <p class="feature__text">
+              Some new stuff for your bike. Quidem consequatur harum, voluptatum
+              mollitia quae. Tenetur distinctio necessitatibus pariatur
+              voluptatibus.
+            </p>
+          </div>
+
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="img/sprite.svg#icon-helmet"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--light">Gear</h4>
+            <p class="feature__text">
+              Time to gear yourself up? Pariatur voluptatibus quidem consequatur
+              harum, voluptatum mollitia quae.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!--PASSION-->
+      <div class="passion__header">
+        <h2 class="heading-2 heading-2--dark">
+          it's that<br />
+          longing to be
+        </h2>
+        <h1 class="heading-1 heading-1--dark">
+          yourself
+        </h1>
+      </div>
+      <div class="passion__text">
+        <h3 class="heading-3 heading-3--dark">
+          that boost our<br />
+          lust for life
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+          voluptas accusamus quis tenetur modi sed recusandae at suscipit,
+          officia quidem, aliquid dicta qui. Itaque cupiditate rerum saepe
+          reiciendis, repellendus molestias accusamus blanditiis.
+        </p>
+      </div>
+
+      <div class="passion__pic"></div>
+
+      <!--GALLERY-->
+      <section id="gallery" class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <a href="" class="work-item__icon" data-id="1">
+            <img
+              src="/img/gal-1.jpg"
+              alt="Gallery image 1"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <a href="" class="work-item__icon" data-id="2">
+            <img
+              src="/img/gal-2.jpg"
+              alt="Gallery image 2"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <a href="" class="work-item__icon" data-id="3">
+            <img
+              src="/img/gal-3.jpg"
+              alt="Gallery image 3"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <a href="" class="work-item__icon" data-id="4">
+            <img
+              src="/img/gal-4.jpg"
+              alt="Gallery image 4"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <a href="" class="work-item__icon" data-id="5">
+            <img
+              src="/img/gal-5.jpg"
+              alt="Gallery image 5"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <a href="" class="work-item__icon" data-id="6">
+            <img
+              src="/img/gal-6.jpg"
+              alt="Gallery image 6"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <a href="" class="work-item__icon" data-id="7">
+            <img
+              src="/img/gal-7.jpg"
+              alt="Gallery image 7"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <a href="" class="work-item__icon" data-id="8">
+            <img
+              src="/img/gal-8.jpg"
+              alt="Gallery image 8"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <a href="" class="work-item__icon" data-id="9">
+            <img
+              src="/img/gal-9.jpg"
+              alt="Gallery image 9"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <a href="" class="work-item__icon" data-id="10">
+            <img
+              src="/img/gal-10.jpg"
+              alt="Gallery image 10"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+          <a href="" class="work-item__icon" data-id="11">
+            <img
+              src="/img/gal-11.jpg"
+              alt="Gallery image 11"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--12">
+          <a href="" class="work-item__icon" data-id="12">
+            <img
+              src="/img/gal-12.jpg"
+              alt="Gallery image 12"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--13">
+          <a href="" class="work-item__icon" data-id="13">
+            <img
+              src="/img/gal-13.jpg"
+              alt="Gallery image 13"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item--14">
+          <a href="" class="work-item__icon" data-id="14">
+            <img
+              src="/img/gal-14.jpg"
+              alt="Gallery image 14"
+              class="gallery__img"
+            />
+          </a>
+        </figure>
+        <!--Gallery Modal-->
+        <div class="work-modal">
+          <div class="work-modal__item"></div>
+          <div class="work-modal__close">
+            <i class="fa fa-window-close"></i>
+          </div>
+        </div>
+      </section>
+      <!--end GALLERY-->
+
+      <!--INNOVATIONS-->
+      <section class="innovations">
+        <div class="innovation">
+          <h2 class="innovation__heading-5 heading-5--light">innovations</h2>
+          <div class="inno">
+            <p class="inno__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quasi odit quo voluptas fuga! Omnis reprehenderit, harum
+              necessitatibus hic nobis labore consequuntur recusandae quibusdam
+              in totam qui id dolor officiis architecto expedita.
+            </p>
+            <div class="inno__button">
+              <button class="btn btn--transparent">take a closer look</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--NEWS-->
+      <div id="news" class="news">
+        <ul class="cards">
+          <li class="cards__item">
+            <div class="card">
+              <h3 class="heading-3 heading-3--dark">
+                Some news
+              </h3>
+              <div class="card__image card__image--pic-1"></div>
+              <div class="card__content">
+                <div class="card__title">Meet the team</div>
+                <p class="card__text">
+                  Meet the teem behind our latest build, the 93! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Iusto sequi
+                  reiciendis rem pariatur dolore dolores illum voluptas sapiente
+                  expedita ad!
+                </p>
+                <button class="btns btn--blue">read more</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <div class="card">
+              <h3 class="heading-3 heading-3--dark">
+                other news
+              </h3>
+              <div class="card__image card__image--pic-2"></div>
+              <div class="card__content">
+                <div class="card__title">Follow us to the show</div>
+                <p class="card__text">
+                  Come behind the scene and see our prep and work to get this
+                  beauty to it's first show. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Porro veniam quisquam sequi aut
+                  laborum perspiciatis inventore vero expedita possimus
+                  obcaecati.
+                </p>
+                <button class="btns btn--blue">read more</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <div class="card">
+              <h3 class="heading-3 heading-3--dark">
+                more news
+              </h3>
+              <div class="card__image card__image--pic-3"></div>
+              <div class="card__content">
+                <div class="card__title">Finally complete</div>
+                <p class="card__text">
+                  It took Batman and the Joker some time to put this masterpiece
+                  together, but now it's done! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Tempore magni maxime iusto quos
+                  cumque odit.
+                </p>
+                <button class="btns btn--blue">read more</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--FOOTER-->
+      <footer id="footer" class="footer">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="" class="nav__link">Find your bike</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">plan your project</a>
+          </li>
+          <li class="nav__item"><a href="" class="nav__link">Contact us</a></li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Service & repair</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Let us build</a>
+          </li>
+        </ul>
+        <p class="reach">
+          Adress: Bikestreet 345 | 8764 23 BIKERTOWN | Bikeland <br />Phone: +55
+          555-987 23 23
+        </p>
+        <p class="reach">
+          &copy; Copyright 2020 by Joakim Wretlind.
+        </p>
+      </footer>
+    </div>
+    <!--end wrapping container-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/gallery.js"></script>
+  </body>
+</html>

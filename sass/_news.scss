@@ -1,0 +1,128 @@
+.news {
+  grid-column: full-start/ full-end;
+  background: $light-gray-1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 6% 0;
+  max-width: 100rem;
+  margin: auto;
+  &__item {
+    display: flex;
+    padding: 1rem;
+    @media (min-width: 40rem) {
+      width: 50%;
+    }
+    @media (min-width: 56rem) {
+      width: 33.3333%;
+    }
+  }
+}
+
+.card {
+  background: $white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5rem;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+    transform: scale(1.1) rotate(-2deg);
+    transition: transform 0.35s ease;
+  }
+  h3 {
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    :hover {
+      transform: rotate(-1deg);
+      transition: transform 0.35s ease-in-out;
+    }
+  }
+  &__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btns {
+  color: rgb(199, 199, 199);
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.8rem 3rem;
+  width: 100%;
+  margin: 0 auto;
+  transition-duration: 0.35s;
+
+  cursor: pointer;
+  &:hover {
+    background: $red;
+  }
+  &:active {
+    background: $light-gray-2;
+  }
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media (min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+.card__image--pic-1 {
+  background-image: url(/img/bob-2br.jpg);
+}
+
+.card__image--pic-2 {
+  background-image: url(/img/bob-3br2.jpg);
+}
+
+.card__image--pic-3 {
+  background-image: url(/img/bob-4br.jpg);
+}
+
+.card__title {
+  color: #333;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+}

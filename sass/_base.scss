@@ -1,0 +1,67 @@
+// COLOR VARIABLES
+$white: #fff;
+$black: #000;
+$red: #c70000;
+$blue: #000038;
+$light-gray-1: #f9f7f6;
+$dark-gray: #333;
+$light-gray-2: #aaa;
+$off-white: #f0f0f0;
+
+// FONT VARIABLES
+$font-primary: "Montserrat", sans-serif;
+$font-display: "Michroma", sans-serif;
+$font-header: "legaue";
+
+// FONTSIZE
+$size-primary: 1.7rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-xsmall: 29em; // 464px/16
+$bp-small: 40em; // 640/16
+$bp-medium: 48em; // 768px/16
+$bp-large: 62.5em; // 1000/16
+$bp-largest: 75em; // 1200/16
+$bp-xxl: 88em; // 1408/16
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 62.5% of 16px => 1rem = 1px
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $dark-gray;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [mid-start] minmax(3rem, 1fr)
+    [center-start] repeat(4, [col-start] minmax(min-content, 23rem) [col-end])
+    [center-end]
+    minmax(3rem, 1fr) [mid-end]
+    minmax(6rem, 1fr) [full-end];
+
+  grid-template-rows:
+    100vh
+    minmax(90vh, max-content)
+    min-content
+    min-content
+    min-content
+    min-content
+    max-content
+    repeat(2, min-content);
+}

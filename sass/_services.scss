@@ -1,0 +1,63 @@
+.services {
+  grid-column: full-start/ full-end;
+  background: linear-gradient(rgba(0, 0, 26, 0.7), rgba(0, 0, 26, 0.7)),
+    url(/img/mc-4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.features {
+  grid-column: center-start / center-end;
+  margin: 10rem 5vw;
+
+  @media only screen and (min-width: 940px) {
+    margin: 15rem 20vw;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+  }
+}
+
+.feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+
+  &__icon {
+    fill: $white;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+    @media only screen and (min-width: $bp-large) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__text {
+    color: $off-white;
+    font-size: 1.3rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+  }
+}

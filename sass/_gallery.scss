@@ -1,0 +1,136 @@
+.gallery {
+  grid-column: full-start/ full-end;
+  background-color: $light-gray-1;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  @media only screen and (min-width: $bp-medium) {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+  }
+  @media only screen and (min-width: $bp-large) {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+  }
+  @media only screen and (min-width: $bp-large) {
+    margin-bottom: 15rem;
+  }
+
+  &__item {
+    &--1 {
+      grid-row: 1/ 3;
+      grid-column: 1/ 3;
+    }
+    &--2 {
+      grid-row: 1/ 4;
+      grid-column: 3/ 6;
+    }
+    &--3 {
+      grid-row: 1/ 3;
+      grid-column: 6/ 7;
+    }
+    &--4 {
+      grid-row: 1/ 3;
+      grid-column: 7/ 9;
+    }
+    &--5 {
+      grid-row: 3/ 6;
+      grid-column: 1/ 3;
+    }
+    &--6 {
+      grid-row: 4/ 6;
+      grid-column: 3/ 5;
+    }
+    &--7 {
+      grid-row: 4/ 5;
+      grid-column: 5/ 6;
+    }
+    &--8 {
+      grid-row: 3/ 5;
+      grid-column: 6/ 8;
+    }
+    &--9 {
+      grid-row: 3/ 6;
+      grid-column: 8/ 9;
+    }
+    &--10 {
+      grid-row: 6/ 8;
+      grid-column: 1/ 2;
+    }
+    &--11 {
+      grid-row: 6/ 8;
+      grid-column: 2/ 4;
+    }
+    &--12 {
+      grid-row: 6/ 8;
+      grid-column: 4/ 5;
+    }
+    &--13 {
+      grid-row: 5/ 8;
+      grid-column: 5/ 8;
+    }
+    &--14 {
+      grid-row: 6/ 8;
+      grid-column: 8/ 9;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.work-modal {
+  display: none;
+}
+.work-modal--show {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-modal__item {
+  background: url(/img/gal-1.jpg) center/cover;
+  height: 70vh;
+  width: 80vw;
+  border: 1rem solid $dark-gray;
+  border-radius: 1rem;
+
+  @media screen and (min-width: $bp-medium) {
+    height: 80vh;
+    width: 60vw;
+  }
+}
+
+.work-modal__close {
+  position: fixed;
+  font-size: 5rem;
+  color: $red;
+  bottom: 5%;
+  right: 5%;
+  transition: color 0.35s linear;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  @media screen and (min-width: $bp-large) {
+    right: 10%;
+  }
+  :hover {
+    color: $white;
+  }
+}

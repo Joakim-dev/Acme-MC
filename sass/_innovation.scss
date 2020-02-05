@@ -1,0 +1,86 @@
+.innovations {
+  grid-column: full-start/ full-end;
+  background: linear-gradient(rgba(0, 0, 26, 0.7), rgba(0, 0, 26, 0.7)),
+    url(/img/inno-1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin-top: 7rem;
+  padding-left: 3rem;
+}
+
+.innovation {
+  display: flex;
+  flex-direction: column;
+  padding: 13% 0;
+
+  @media only screen and (min-width: $bp-small) {
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+  }
+  @media only screen and (min-width: $bp-large) {
+    max-width: 60%;
+    padding-left: 10%;
+  }
+
+  &__heading-5 {
+    @extend %heading;
+    font-size: 1.7rem;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    color: #f0f0f0;
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 2.4vw;
+      margin-left: -5%;
+    }
+    @media only screen and (min-width: $bp-large) {
+      margin-left: -20%;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .inno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (min-width: $bp-medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      color: $off-white;
+      width: 80%;
+      @media only screen and (min-width: $bp-medium) {
+        font-size: 1.5rem;
+        width: 60%;
+        margin-left: -5%;
+      }
+      @media only screen and (min-width: $bp-large) {
+        font-size: $font-primary;
+        width: 60%;
+        margin-left: -20%;
+        line-height: 2;
+      }
+    }
+    &__button {
+      padding-top: 3rem;
+      @media only screen and (min-width: $bp-small) {
+        margin: auto;
+      }
+
+      @media only screen and (min-width: $bp-medium) {
+        margin: 0;
+      }
+      :hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: $dark-gray;
+      }
+    }
+  }
+}
